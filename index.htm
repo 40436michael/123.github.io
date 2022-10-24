@@ -16,9 +16,50 @@
 	    $("#show").click(function(){
 	      $("div.dropdown").show();
 	    });
+		$("tr:even").css("background-color","#FF9");
+      $("tr:odd").css("background-color","#CFF");
+      $("tr:first").css("background-color","#FCF");
+  
+      $("#btnFadeout").click(function(){
+        $("#box").fadeOut(500);
+      });
+      $("#btnFadein").click(function(){
+        $("#box").fadeIn("slow");
+      });
+      $("#btnFadeto").click(function(){
+        $("#box").fadeTo("slow", 0.5);
+      });
+      $('#btnFadeToggle').click(function(){
+        $("#box").fadeToggle("slow");
+      });
 	  });
 	</script>
 	<div>
+		<h2>認識輔大</h2>
+  <p>輔大是所私立大學</p>
+  <table width="400" border="1">
+    <tr>
+      <td>相關網站</td>
+    </tr>  
+    <tr>
+      <td>輔大全球資訊網 https://www.fju.edu.tw/</td>
+    </tr>
+    <tr>
+      <td herf="">tronclass https://elearn2.fju.edu.tw/user/courses</td>
+    </tr>
+    <tr>
+      <td>圖書館 http://home.lib.fju.edu.tw/TC/</td>
+    </tr>
+    <tr>
+      <td>理工學院 https://www.facebook.com/groups/300846203725831</td>
+    </tr>
+    <ul>
+        <li><a href="http://jquery.com/">jQuery官方網站</a></li>
+        <li><a href="http://jquery.com/download/">jQuery下載</a></li>
+        <li><a href="http://learn.jquery.com/">jQuery學習中心</a></li>
+        <li><a href="http://blog.jquery.com/">jQuery部落格</a></li>
+      </ul>
+  </table>
 		<div>
 			<h1>Welcome to My Personal Page</h1>
 		</div>
